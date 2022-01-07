@@ -5,7 +5,7 @@ import "github.com/streadway/amqp"
 // Initiating event is the event that starts the whole event process, it is sent to
 // an initiating event queue which is accepted by the event mediator.
 type Event struct {
-	EventQueues []EventQueue
+	EventQueue EventQueue
 }
 
 // An Event Mediator manages and controls the workflow for initiating events that
@@ -26,8 +26,8 @@ type EventProcessor struct {
 // Event Queue is a queue from which the events starts, Initiating Event component
 // send the event to the Event Queue which sends that event to Event(s) Mediator
 type EventQueue struct {
-	Queue         []amqp.Queue
-	EventMediator []EventMediator
+	Queue          amqp.Queue
+	EventMediators []EventMediator
 }
 
 type EventChannel struct {
