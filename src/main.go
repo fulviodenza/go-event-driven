@@ -1,41 +1,39 @@
 package main
 
-import "github.com/streadway/amqp"
+import (
+	"log"
 
-// func failOnError(err error, msg string) {
-// 	if err != nil {
-// 		log.Fatalf("%s: %s", msg, err)
-// 	}
-// }
+	"github.com/streadway/amqp"
+)
 
-//EventMediator
-func (em *EventMediator) AttachEventChannel(ec EventChannel) {
-	em.EventChannels = append(em.EventChannels, ec)
+func failOnError(err error, msg string) {
+	if err != nil {
+		log.Fatalf("%s: %s", msg, err)
+	}
 }
 
-func (em *EventMediator) AddRecognizedEvent(s string) {
-	em.RecognizedEvents = append(em.RecognizedEvents, s)
-}
+func main() {
+	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
+	failOnError(err, "Failed to connect to RabbitMQ")
+	defer conn.Close()
 
-//EventProcessor
-func (ep *EventProcessor) AddComponent(f func()) {
-	ep.Components = append(ep.Components, f)
-}
+	ch, err := conn.Channel()
+	failOnError(err, "Failed to open a channel")
+	defer ch.Close()
 
-//EventQueue
-// func (eq *EventQueue) AddQueue(q amqp.Queue) {
-// 	eq.Queue = append(eq.Queue, q)
-// }
+	// q, err := ch.QueueDeclare(
+	// 	"hello", // name
+	// 	false,   // durable
+	// 	false,   // delete when unused
+	// 	false,   // exclusive
+	// 	false,   // no-wait
+	// 	nil,     // arguments
+	// )
+	// failOnError(err, "Failed to declare a queue")
 
-func (eq *EventQueue) AddEventMediator(em EventMediator) {
-	eq.EventMediators = append(eq.EventMediators, em)
-}
+	forever := make(chan bool)
 
-//EventChannel
-func (ec *EventChannel) AddQueue(q amqp.Queue) {
-	ec.Queue = append(ec.Queue, q)
-}
+	log.Printf(" [*] Waiting for messages. To exit press CTRL+C")
+	<-forever
 
-func (ec *EventChannel) AddEventProcessor(ep EventProcessor) {
-	ec.EventProcessors = append(ec.EventProcessors, ep)
 }

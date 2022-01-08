@@ -3,19 +3,12 @@ package main
 import (
 	"bytes"
 	"encoding/gob"
-	"log"
 
 	"github.com/streadway/amqp"
 )
 
 type Message struct {
 	n interface{}
-}
-
-func failOnError(err error, msg string) {
-	if err != nil {
-		log.Fatalf("%s: %s", msg, err)
-	}
 }
 
 //This operation should be done from the user
@@ -30,16 +23,18 @@ func failOnError(err error, msg string) {
 //   )
 //   failOnError(err, "Failed to declare a queue")
 
-func (e Event) Enqueue(m Message) error {
-	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
-	failOnError(err, "Failed to connect to RabbitMQ")
-	defer conn.Close()
+// Enqueue is performed by the Event which triggers the action,
+// After the trigger the event should be enqueued to the single EventQueue
+// And then should be Dequeued by the EventMediator which will dispatch
+// the event inside the correct EventChannel
+
+func (e Event) Enqueue(m Message, conn *amqp.Connection) error {
 
 	ch, err := conn.Channel()
 	failOnError(err, "Failed to open a channel")
 	defer ch.Close()
 
-	b, err := getBytes(m.n)
+	b, err := GetBytes(m.n)
 	failOnError(err, "Failed to cast the message into bytes")
 
 	err = ch.Publish(
@@ -56,7 +51,7 @@ func (e Event) Enqueue(m Message) error {
 	return nil
 }
 
-func getBytes(i interface{}) ([]byte, error) {
+func GetBytes(i interface{}) ([]byte, error) {
 
 	var buf bytes.Buffer
 	enc := gob.NewEncoder(&buf)
