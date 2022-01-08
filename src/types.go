@@ -1,6 +1,8 @@
 package main
 
-import "github.com/streadway/amqp"
+import (
+	amqp "github.com/rabbitmq/amqp091-go"
+)
 
 // Initiating event is the event that starts the whole event process, it is sent to
 // an initiating event queue which is accepted by the event mediator.

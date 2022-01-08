@@ -1,6 +1,8 @@
 package main
 
-import "github.com/streadway/amqp"
+import (
+	amqp "github.com/rabbitmq/amqp091-go"
+)
 
 // func failOnError(err error, msg string) {
 // 	if err != nil {

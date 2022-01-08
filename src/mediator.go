@@ -1,6 +1,8 @@
 package main
 
-import "github.com/streadway/amqp"
+import (
+	amqp "github.com/rabbitmq/amqp091-go"
+)
 
 // This is the mediator's module, mediator dequeues
 // the message and handles it based on user defined message
