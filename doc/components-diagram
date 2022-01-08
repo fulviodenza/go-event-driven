@@ -1,1 +1,145 @@
-<mxfile host="app.diagrams.net" modified="2022-01-08T16:14:19.351Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" version="16.2.3" etag="xqfkCoFZXtKIGJAPJWFf" type="github"><diagram id="hPU_KDtX7XrIpGjf9cfo">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-08T16:32:47.315Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="Z0JjUQuLpzppj1bA-b9i" version="16.2.3" type="github">
+  <diagram id="hPU_KDtX7XrIpGjf9cfo" name="Page-1">
+    <mxGraphModel dx="1185" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-3" value="Initiating Event" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="50" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-10" value="Event Mediator" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;direction=east;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="310" y="26.25" width="370" height="167.5" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.467;entryY=-0.031;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="B2ASOzcpIljmQK-Jb_TV-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="170" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="410" y="260" />
+              <mxPoint x="256" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-13" value="Event Channel" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-14" value="Event Queue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="95" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-15" value="Event Processor" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="200" y="330" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-16" value="Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="410" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-17" value="Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="380" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=50;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="B2ASOzcpIljmQK-Jb_TV-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="170" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="490" y="270" />
+              <mxPoint x="410" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-21" value="Event Processor" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="360" y="330" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-22" value="Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="410" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-23" value="Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="380" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=50;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="B2ASOzcpIljmQK-Jb_TV-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="565" y="170" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="565" y="270" />
+              <mxPoint x="570" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-27" value="Event Processor" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="520" y="330" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-28" value="Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="410" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-29" value="Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="380" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=50;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="B2ASOzcpIljmQK-Jb_TV-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="170" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="640" y="260" />
+              <mxPoint x="730" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-33" value="Event Processor" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="680" y="330" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-34" value="Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="715" y="410" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-35" value="Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="715" y="380" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-38" value="Event Channel" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-39" value="Event Channel" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-40" value="Event Channel" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="B2ASOzcpIljmQK-Jb_TV-34" target="B2ASOzcpIljmQK-Jb_TV-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-48" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;droid sans mono&amp;#34; , &amp;#34;monospace&amp;#34; , monospace , &amp;#34;droid sans fallback&amp;#34; ; line-height: 19px&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;type&lt;/span&gt; &lt;span style=&quot;color: #4ec9b0&quot;&gt;Event&lt;/span&gt; &lt;span style=&quot;color: #569cd6&quot;&gt;struct&lt;/span&gt; {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;EventMediator EventMediator&lt;br&gt;&lt;/div&gt;&lt;div&gt;    &lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;Queue amqp.Queue&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacingRight=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="180" width="262.5" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-49" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;droid sans mono&amp;#34; , &amp;#34;monospace&amp;#34; , monospace , &amp;#34;droid sans fallback&amp;#34; ; font-weight: normal ; line-height: 19px&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;type&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0&quot;&gt;EventMediator&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;struct&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;    &lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;RecognizedEvents &lt;/span&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;map&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;[Message]&lt;/span&gt;&lt;span style=&quot;color: #4ec9b0&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;EventChannels&amp;nbsp; &amp;nbsp; EventChannel&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;Queue &lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&amp;nbsp;[]amqp.Queue&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="62.5" width="370" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-50" value="&lt;div style=&quot;color: rgb(212 , 212 , 212) ; background-color: rgb(30 , 30 , 30) ; font-family: &amp;#34;droid sans mono&amp;#34; , &amp;#34;monospace&amp;#34; , monospace , &amp;#34;droid sans fallback&amp;#34; ; font-weight: normal ; line-height: 19px&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;type&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0&quot;&gt;EventProcessor&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;struct&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;    &lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;Components []&lt;/span&gt;&lt;span style=&quot;color: #569cd6&quot;&gt;func&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d4d4d4&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="820" y="355" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" source="B2ASOzcpIljmQK-Jb_TV-51" target="B2ASOzcpIljmQK-Jb_TV-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-51" value="" style="strokeWidth=1;outlineConnect=0;dashed=0;align=center;html=1;fontSize=8;shape=mxgraph.eip.messageChannel;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="180" y="100" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-54" value="" style="strokeWidth=1;outlineConnect=0;dashed=0;align=center;html=1;fontSize=8;shape=mxgraph.eip.messageChannel;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="375" y="150" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-55" value="" style="strokeWidth=1;outlineConnect=0;dashed=0;align=center;html=1;fontSize=8;shape=mxgraph.eip.messageChannel;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="455" y="150" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-56" value="" style="strokeWidth=1;outlineConnect=0;dashed=0;align=center;html=1;fontSize=8;shape=mxgraph.eip.messageChannel;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="530" y="150" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-57" value="" style="strokeWidth=1;outlineConnect=0;dashed=0;align=center;html=1;fontSize=8;shape=mxgraph.eip.messageChannel;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="605" y="150" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=0.5;endArrow=none;dashed=0;html=1;strokeColor=#808080;strokeWidth=2;fontSize=12;" edge="1" source="B2ASOzcpIljmQK-Jb_TV-66" target="B2ASOzcpIljmQK-Jb_TV-65" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-65" value="" style="strokeWidth=2;dashed=0;align=center;fontSize=8;shape=ellipse;fillColor=#808080;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="192" y="120" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-66" value="" style="strokeWidth=2;dashed=0;align=center;fontSize=8;shape=rect;fillColor=#80FF6C;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="208" y="138" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="B2ASOzcpIljmQK-Jb_TV-67" value="" style="fillColor=#c0f5a9;dashed=0;outlineConnect=0;strokeWidth=2;html=1;align=center;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.eip.message_dispatcher;" vertex="1" parent="1">
+          <mxGeometry x="330" y="94" width="60" height="32" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
